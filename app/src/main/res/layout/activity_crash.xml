@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Emirhan KOLVER on 24.09.2022 15:59
+  ~ Copyright (c) 2022 . All rights reserved.
+  ~ Last modified 24.09.2022 14:05
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CrashActivity">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_bug" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Unexpected Error Occurred"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:alpha=".7"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:maxEms="11"
+        android:text="Sorry for inconvenience. Please report this error to us"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:minHeight="50dp"
+        android:paddingHorizontal="24dp"
+        android:text="Report"
+        android:textAllCaps="false"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/bRestartApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Restart App"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="-3dp"
+            android:background="#000" />
+
+    </LinearLayout>
+
+</LinearLayout>
