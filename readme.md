@@ -7,7 +7,37 @@ Rather than showing the default boring system error dialog, it serves to open th
 desired Activity whenever the Application crashes. And it has only 2 functions
 
 
+## Installation
 
+Step 1. Add the JitPack repository to your settings.gradle file
+
+```gradle
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // Add this line
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // Add this line
+    }
+}
+```
+
+Step 2. Add The GlobalExceptionHandler Dependency to your build.gradle(app) file.
+
+```gradle
+dependencies {
+    implementation 'com.github.Alonew0lfxx:GlobalExceptionHandler:1.0.0'
+}
+```
 
 ## Usage/Examples
 
@@ -21,7 +51,7 @@ class App : Application() {
 }
 ```
 
-App.kt
+CrashActivity.kt
 ```kotlin
 class CrashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,3 +92,4 @@ With GlobalExceptionHandler | Without GlobalExceptionHandler
 --- | ---
 ![](https://github.com/Alonew0lfxx/GlobalExceptionHandler/blob/master/assets/gif1.gif?raw=true) | ![](https://github.com/Alonew0lfxx/GlobalExceptionHandler/blob/master/assets/gif0.gif?raw=true)
 
+###### Emirhan Kolver © 2022 | 24.09.2022
