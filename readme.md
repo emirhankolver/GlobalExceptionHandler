@@ -36,7 +36,7 @@ Step 2. Add The GlobalExceptionHandler Dependency to your build.gradle(app) file
 
 ```gradle
 dependencies {
-    implementation 'com.github.Alonew0lfxx:GlobalExceptionHandler:1.0.0'
+    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.0'
 }
 ```
 
@@ -91,6 +91,6 @@ class CrashActivity : AppCompatActivity() {
 ## Screenshots
 With GlobalExceptionHandler | Without GlobalExceptionHandler
 --- | ---
-![](https://github.com/Alonew0lfxx/GlobalExceptionHandler/blob/master/assets/gif1.gif?raw=true) | ![](https://github.com/Alonew0lfxx/GlobalExceptionHandler/blob/master/assets/gif0.gif?raw=true)
+![](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/assets/gif1.gif?raw=true) | ![](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/assets/gif0.gif?raw=true)
 
 ###### Emirhan Kolver © 2022 | 24.09.2022
