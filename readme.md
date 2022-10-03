@@ -15,8 +15,8 @@ Please update your Build.gradle(App) file as following
 
 ```gradle
 dependencies {
-    // implementation 'com.github.alonew0lfxx:GlobalExceptionHandler:1.0.0' Uses old username
-    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.0'
+    // implementation 'com.github.alonew0lfxx:GlobalExceptionHandler:1.0.1' Uses old username
+    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.1'
 }
 ```
 
