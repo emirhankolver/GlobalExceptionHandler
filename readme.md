@@ -8,6 +8,19 @@ Rather than showing the default boring system error dialog, it serves to open th
 desired Activity whenever the Application crashes. And it has only 2 functions
 
 
+## Note
+I've been changed my github username from ``alonew0lfxx`` to ``emirhankolver``.
+So if you're experiencing problems about from my dependency. 
+Please update your Build.gradle(App) file as following
+
+```gradle
+dependencies {
+    // implementation 'com.github.alonew0lfxx:GlobalExceptionHandler:1.0.0' Uses old username
+    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.0'
+}
+```
+
+
 ## Installation
 
 Step 1. Add the JitPack repository to your settings.gradle file
