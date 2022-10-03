@@ -4,7 +4,7 @@
  * Last modified 24.09.2022 17:19
  */
 
-package com.alonew0lfxx
+package com.emirhankolver
 
 import org.junit.Test
 

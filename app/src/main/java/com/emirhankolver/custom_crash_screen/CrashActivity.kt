@@ -4,7 +4,7 @@
  * Last modified 24.09.2022 15:58
  */
 
-package com.alonew0lfxx.custom_crash_screen
+package com.emirhankolver.custom_crash_screen
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -12,8 +12,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.alonew0lfxx.custom_crash_screen.databinding.ActivityCrashBinding
-import com.alonew0lfxx.GlobalExceptionHandler
+import com.emirhankolver.custom_crash_screen.databinding.ActivityCrashBinding
+import com.emirhankolver.GlobalExceptionHandler
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 @SuppressLint("SetTextI18n")

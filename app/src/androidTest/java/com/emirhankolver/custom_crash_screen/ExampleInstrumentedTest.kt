@@ -4,7 +4,7 @@
  * Last modified 24.09.2022 14:05
  */
 
-package com.alonew0lfxx.custom_crash_screen
+package com.emirhankolver.custom_crash_screen
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -25,6 +25,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.alonew0lfxx.custom_crash_screen", appContext.packageName)
+        assertEquals("com.emirhankolver.custom_crash_screen", appContext.packageName)
     }
 }

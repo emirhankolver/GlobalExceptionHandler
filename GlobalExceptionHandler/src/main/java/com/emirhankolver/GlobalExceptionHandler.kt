@@ -4,7 +4,7 @@
  * Last modified 24.09.2022 15:59
  */
 
-package com.alonew0lfxx
+package com.emirhankolver
 
 import android.content.Context
 import android.content.Intent

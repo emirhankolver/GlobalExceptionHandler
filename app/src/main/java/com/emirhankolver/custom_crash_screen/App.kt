@@ -3,10 +3,10 @@
  * Copyright (c) 2022 . All rights reserved.
  * Last modified 24.09.2022 18:37
  */
-package com.alonew0lfxx.custom_crash_screen
+package com.emirhankolver.custom_crash_screen
 
 import android.app.Application
-import com.alonew0lfxx.GlobalExceptionHandler
+import com.emirhankolver.GlobalExceptionHandler
 
 class App : Application() {
 

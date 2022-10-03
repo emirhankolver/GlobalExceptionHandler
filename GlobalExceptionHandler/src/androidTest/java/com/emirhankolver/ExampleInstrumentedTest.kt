@@ -4,7 +4,7 @@
  * Last modified 24.09.2022 17:19
  */
 
-package com.alonew0lfxx
+package com.emirhankolver
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

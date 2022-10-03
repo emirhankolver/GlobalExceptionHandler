@@ -4,12 +4,11 @@
  * Last modified 24.09.2022 15:24
  */
 
-package com.alonew0lfxx.custom_crash_screen
+package com.emirhankolver.custom_crash_screen
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.alonew0lfxx.custom_crash_screen.databinding.ActivityMainBinding
+import com.emirhankolver.custom_crash_screen.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

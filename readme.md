@@ -49,7 +49,7 @@ Step 2. Add The GlobalExceptionHandler Dependency to your build.gradle(app) file
 
 ```gradle
 dependencies {
-    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.0'
+    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.1'
 }
 ```
 

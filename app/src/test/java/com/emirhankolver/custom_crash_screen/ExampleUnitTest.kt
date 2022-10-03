@@ -4,7 +4,7 @@
  * Last modified 24.09.2022 14:05
  */
 
-package com.alonew0lfxx.custom_crash_screen
+package com.emirhankolver.custom_crash_screen
 
 import org.junit.Test
 
