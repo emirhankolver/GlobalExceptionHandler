@@ -4,6 +4,8 @@
 ![header](https://github.com/emirhankolver/GlobalExceptionHandler/blob/c56bf46d4497edb24425896abf680cc3155a7579/assets/header.png?raw=true)
 [![](https://visitcount.itsvg.in/api?id=GlobalExceptionHandler&label=Project%20Views&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/emirhankolver/globalexceptionhandler/badge)](https://www.codefactor.io/repository/github/emirhankolver/globalexceptionhandler)
+
 Rather than showing the default boring system error dialog, it serves to open the
 desired Activity whenever the Application crashes. And it has only 2 functions
 
