@@ -108,4 +108,8 @@ With GlobalExceptionHandler | Without GlobalExceptionHandler
 --- | ---
 ![](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/assets/gif1.gif?raw=true) | ![](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/assets/gif0.gif?raw=true)
 
-###### Emirhan Kolver © 2022 | 24.09.2022
+
+## License
+[Apache License 2.0](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/LICENCE)
+
+###### Emirhan Kolver © 2022 | 22.10.2022
