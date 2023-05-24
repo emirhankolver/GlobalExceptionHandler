@@ -8,8 +8,7 @@ package com.emirhankolver
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
-import com.google.gson.Gson
+import com.emirhankolver.usecase.IntentUseCase
 import kotlin.system.exitProcess
 
 /**
@@ -45,20 +44,18 @@ class GlobalExceptionHandler private constructor(
         activity: Class<*>,
         exception: Throwable
     ) {
-        val crashedIntent = Intent(applicationContext, activity).also {
-            it.putExtra(INTENT_DATA_NAME, Gson().toJson(exception))
-        }
-        crashedIntent.addFlags( // Clears all previous activities. So backstack will be gone
-            Intent.FLAG_ACTIVITY_CLEAR_TOP or
-                    Intent.FLAG_ACTIVITY_NEW_TASK
+        applicationContext.startActivity(
+            IntentUseCase.createLaunchIntent(
+                applicationContext = applicationContext,
+                keyExtra = EXTRA_CRASH_DATA,
+                throwable = exception,
+                activity = activity
+            )
         )
-        crashedIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-        applicationContext.startActivity(crashedIntent)
     }
 
     companion object {
-        private const val INTENT_DATA_NAME = "CrashData"
-        private const val TAG = "CustomExceptionHandler"
+        private const val EXTRA_CRASH_DATA = "CrashData"
 
         /**
          * [applicationContext]: Required for launching the activity.
@@ -92,12 +89,7 @@ class GlobalExceptionHandler private constructor(
          * found or another reasons.
          */
         fun getThrowableFromIntent(intent: Intent): Throwable? {
-            return try {
-                Gson().fromJson(intent.getStringExtra(INTENT_DATA_NAME), Throwable::class.java)
-            } catch (e: Exception) {
-                Log.e(TAG, "getThrowableFromIntent: ", e)
-                null
-            }
+            return IntentUseCase.getParcelableExtraSafe(intent, EXTRA_CRASH_DATA)
         }
     }
 }

@@ -1,4 +1,3 @@
-
 # GlobalExceptionHandler
 
 ![header](https://github.com/emirhankolver/GlobalExceptionHandler/blob/c56bf46d4497edb24425896abf680cc3155a7579/assets/header.png?raw=true)
@@ -8,20 +7,6 @@
 
 Rather than showing the default boring system error dialog, it serves to open the
 desired Activity whenever the Application crashes. And it has only 2 functions
-
-
-## Note
-I've been changed my github username from ``alonew0lfxx`` to ``emirhankolver``.
-So if you're experiencing problems about from my dependency. 
-Please update your Build.gradle(App) file as following
-
-```gradle
-dependencies {
-    // implementation 'com.github.alonew0lfxx:GlobalExceptionHandler:1.0.1' Uses old username
-    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.1'
-}
-```
-
 
 ## Installation
 
@@ -51,13 +36,14 @@ Step 2. Add The GlobalExceptionHandler Dependency to your build.gradle(app) file
 
 ```gradle
 dependencies {
-    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.1'
+    implementation 'com.github.emirhankolver:GlobalExceptionHandler:1.0.2'
 }
 ```
 
 ## Usage/Examples
 
 App.kt
+
 ```kotlin
 class App : Application() {
     override fun onCreate() {
@@ -68,6 +54,7 @@ class App : Application() {
 ```
 
 CrashActivity.kt
+
 ```kotlin
 class CrashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,8 +64,8 @@ class CrashActivity : AppCompatActivity() {
         }
         setContentView(view)
     }
+}
 ```
-
 
 ## Functions
 
@@ -88,9 +75,9 @@ class CrashActivity : AppCompatActivity() {
   GlobalExceptionHandler.initalize(applicationContext, activityToBeLaunched)
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `applicationContext` | `Context` | Required to launch Intent |
+| Parameter              | Type       | Description                                       |
+|:-----------------------|:-----------|:--------------------------------------------------|
+| `applicationContext`   | `Context`  | Required to launch Intent                         |
 | `activityToBeLaunched` | `Activity` | The activity to be launched whenerver app crashes |
 
 #### Get Throwable from Intent
@@ -99,17 +86,18 @@ class CrashActivity : AppCompatActivity() {
   GlobalExceptionHandler.getThrowableFromIntent(intent): Throwable?
 ```
 
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
+| Parameter | Type     | Description                                                                                           |
+|:----------|:---------|:------------------------------------------------------------------------------------------------------|
 | `intent`  | `Intent` | Retrives crash data from intent. It should be called inside of the **activityToBeLaunched** Activity. |
 
 ## Screenshots
-With GlobalExceptionHandler | Without GlobalExceptionHandler
---- | ---
-![](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/assets/gif1.gif?raw=true) | ![](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/assets/gif0.gif?raw=true)
 
+| With GlobalExceptionHandler                                                                       | Without GlobalExceptionHandler                                                                    |
+|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| ![](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/assets/gif1.gif?raw=true) | ![](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/assets/gif0.gif?raw=true) |
 
 ## License
+
 [Apache License 2.0](https://github.com/emirhankolver/GlobalExceptionHandler/blob/master/LICENCE)
 
 ###### Emirhan Kolver © 2022 | 22.10.2022
