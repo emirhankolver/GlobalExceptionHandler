@@ -20,7 +20,7 @@ import kotlin.system.exitProcess
  * Android's default Crash Dialog will be show up.
  *
  * [activityToBeLaunched]: The activity to be launched :D,
- * it will put Exception data as JSON string. It can be
+ * it will put Exception data as Parcelable. It can be
  * easily converted back to [Throwable] class by ```Gson().fromJSON(str,Throwable::class.java)```
  * function.
  */
@@ -61,7 +61,7 @@ class GlobalExceptionHandler private constructor(
          * [applicationContext]: Required for launching the activity.
          *
          * [activityToBeLaunched]: The activity that to be launched :D,
-         * it will put Exception data as JSON string. It can be
+         * it will put Exception data as Parcelable. It can be
          * easily converted back to [Throwable] with [getThrowableFromIntent].
          *
          * **Example usage at activity:**
